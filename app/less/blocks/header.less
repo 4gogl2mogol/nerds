@@ -1,1 +1,115 @@
-/* */
+.header {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+
+  &-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //align-items: flex-end;
+  }
+
+  &-logo {
+    line-height: 10px;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  &-navigation {
+    width: 800px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.site-navigation {
+  width: 438px;
+  margin: 0 0 0 2px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  //Если количество пунктов меню изменится
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+
+  & a {
+    margin: 0;
+    padding: 24px 0 4px 0;
+    //Для того, чтобы начали работать паддинги.
+    //Ссылка кликабельный элемент, должна занимать наибольшую площадь
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fb565a;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+      border-bottom: none;
+    }
+  }
+}
+
+.user-navigation {
+  width: 115px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & li {
+    position: relative;
+  }
+
+  & a {
+    display: block;
+    margin: 0;
+    padding: 24px 0 4px 39px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fb565a;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+
+    &::before {
+      width: 15px;
+      height: 15px;
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 0;
+      background-image: url("../../img/cart-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+.current-link {
+  border-bottom: 2px solid #fb565a;
+}
