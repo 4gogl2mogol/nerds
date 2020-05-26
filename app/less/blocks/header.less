@@ -7,7 +7,7 @@
   &-container {
     width: 1200px;
     margin: 0 auto;
-    padding: 50px 20px 20px 20px;
+    padding: 50px 20px 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,7 +15,8 @@
   }
 
   &-logo {
-    line-height: 10px;
+    line-height: 0;
+    vertical-align: baseline;
 
     &:hover {
       opacity: 0.3;
@@ -32,7 +33,7 @@
 }
 
 .site-navigation {
-  width: 438px;
+  width: 439px;
   margin: 0 0 0 2px;
   padding: 0;
   display: flex;
@@ -80,7 +81,7 @@
   & a {
     display: block;
     margin: 0;
-    padding: 24px 0 4px 39px;
+    padding: 24px 0 4px 40px;
     font-size: 16px;
     line-height: 30px;
     color: #000000;

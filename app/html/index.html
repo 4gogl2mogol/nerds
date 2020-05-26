@@ -6,7 +6,7 @@
 	<meta name="description" content="Учебный проект">
 	<meta name="keywords" content="frontend, html, less, js">
 	<title>Нёрдс. Главная страница</title>
-<!--	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">-->
+	<!--	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">-->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -54,34 +54,45 @@
 	<section class="slider">
 
 		<h2 class="visually-hidden">Слайдер</h2>
+		<!-- Контейнер, необходимый для абсолютного позиционирования кнопок в блока slider  -->
+		<div class="slider-position-container">
 
-		<ul class="slider-list">
-			<li>
-				<b>Долго, дорого,<br>скрупулезно.</b>
-				<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-			</li>
-			<li>
-				<b>Любим математику<br>как никто другой</b>
-				<p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-			</li>
-			<li>
-				<b>Только ночь,<br>только хардкор</b>
-				<p>Работать днем, как все?<br>Мы против этого. Ближе к полуночи работа только начинается.</p>
-			</li>
-		</ul>
-		<a class="button slider-button" href="#">Узнать больше</a>
+			<ul class="slider-list">
+				<li class="slider-item">
+					<b>Долго, дорого,<br>скрупулезно.</b>
+					<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+				</li>
+				<li class="slider-item">
+					<b>Любим математику<br>как никто другой</b>
+					<p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+				</li>
+				<li class="slider-item">
+					<b>Только ночь,<br>только хардкор</b>
+					<p>Работать днем, как все?<br>Мы против этого. Ближе к полуночи работа только начинается.</p>
+				</li>
+			</ul>
 
-		<ul class="slider-switch">
-			<li>
-				<button class="slider-switch-button current-slide" type="button">1-й слайд</button>
-			</li>
-			<li>
-				<button class="slider-switch-button" type="button">2-й слайд</button>
-			</li>
-			<li>
-				<button class="slider-switch-button" type="button">3-й слайд</button>
-			</li>
-		</ul>
+			<a class="button slider-button" href="#">Узнать больше</a>
+
+			<ul class="slider-switch">
+				<li>
+					<button class="slider-switch-button" type="button">
+						<span class="visually-hidden">1-й слайд</span>
+					</button>
+				</li>
+				<li>
+					<button class="slider-switch-button" type="button">
+						<span class="visually-hidden">2-й слайд</span>
+					</button>
+				</li>
+				<li>
+					<button class="slider-switch-button" type="button">
+						<span class="visually-hidden">3-й слайд</span>
+					</button>
+				</li>
+			</ul>
+
+		</div>
 
 	</section>
 
